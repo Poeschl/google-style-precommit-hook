@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-style-precommit-hook"
+version = "0.2.0"
+authors = [
+  { name = "Poeschl" }
+]
+dependencies = [
+  "requests==2.31.0"
+]
+
+[project.scripts]
+google-style-format = "google_style_format:main_with_args"
+
+[tool.black]
+line-length = 160
